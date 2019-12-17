@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Semantic Lay out Markup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.header {
+  width: 100%;
+  background-color: lightblue;
+  text-align: center;
+}
+
+.navbar {
+  background-color: lightcyan;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.article {
+  display: inline-block;  
+  border: solid;
+  max-width: 750px;
+  max-height: 500px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  margin-top: 50px;
+}
+
+.section {
+  border: solid;
+  padding: 5px;
+  margin-top: 5px;
+  max-width: 700px;
+  max-height: 200px;
+}
+
+.sidebar {
+  margin-top: 50px;
+  display: inline-block;  
+  bottom: 500px;
+  float: right;
+  border: solid;
+  max-width: 800px;
+  max-height: 600px;
+  text-align: center;
+}
+
+.aside {
+  border: solid;
+  padding-bottom: 18px;
+  padding-top: 5px;
+  margin: 5px;
+}
+
+.footer {
+  text-align: center;
+  background-color: lightsteelblue;
+}
+
+.footer-end {
+  display: inline-block;
+  margin-top: 200px;
+  border: solid;
+  width: 100%;
+  text-align: center;
+  background-color: lightsteelblue;
+}
+
+</style>
+</head>
+
+<body>
+    <header>
+      <h1 class="header">HEADER: The header element specifies a header for a document or section.
+    </h1>
+    </header>
+
+    <nav class="navbar">
+      <a href="">The nav</a>
+      <a href="">element defines</a>
+      <a href="">a set of</a>
+      <a href="">navigation links.</a>
+    </nav>
+
+  <article class="article">
+    <p>ARTICLE: The article element specifies independent, self-contained content.</p>
+
+    <section class="section">
+      <header class="header">HEADER 1: You can have several header elements in one document.</header>
+      <p class="section_one">SECTION 1: The section element defines a section in a document. A section is a thematic grouping of content, typically with a heading.</p>
+      <footer><p class="footer">FOOTER 1: A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.</p></footer>
+    </section>
+
+    <section class="section">
+      <header class="header">HEADER 2: You can have several header elements in one document.</header>
+      <p class="section_two"> SECTION 2: Header, Section & Footer 2 uses the same CSS value as their counterpart above</p>
+      <footer><p class="footer">FOOTER 2: A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.</p>
+      </footer>
+    </section>
+
+</article>
+    <aside class="sidebar">
+      <div class="aside"><p>ASIDE ONE: The aside element defines some content aside from the content it is placed in (like a sidebar).<br>The aside content should be related to the surrounding content.</p>
+      </div>
+
+      <div class="aside"><p>ASIDE TWO: Here we used the Float property with a position relative to set the sidebar on the right of the page.</p>
+      </div>
+
+      <div class="aside"><p>ASIDE THREE: Some padding property is also added to allow the page content to be display on top of each other.</p>
+      </div>
+
+      <div class="aside"><p>ASIDE FOUR: NB - This section will be viewed below the previous if rendered on mobile device.</p>
+      </div>
+
+</aside>
+
+    <footer class="footer-end">
+      <p>FOOTER : This footer takes 100% of the width of the page since it uses a different HTML class than the footers used above.</p>
+    </footer>
+  </div>
+</body>
+
+</html>
